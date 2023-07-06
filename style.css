@@ -154,7 +154,7 @@ header {
 aside {
 	display: flex;
 	flex-direction: column;
-	max-width: 23%;
+	max-width: 25%;
 }
 
 .bar {
@@ -199,6 +199,7 @@ aside {
 main {
 	display: flex;
 	flex-direction: column;
+	max-width: 75%;
 }
 .top-content {
 	display: flex;
@@ -209,7 +210,7 @@ main {
 }
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(7, 1fr);
 	gap: 15px;
 	margin-top: 1rem;
 }
@@ -273,15 +274,27 @@ main {
 	background-color: red;
 }
 .card-top {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 	border-bottom: 1px solid #e6e6e6;
-	padding: 8px;
-	margin-bottom: 20px;
-	font-weight: normal;
+	padding-bottom: 7px;
+	margin-bottom: 5px;
 }
+.card-top a {
+	text-decoration: none;
+	color: #039;
+}
+.card-top a:hover {
+	text-decoration: underline;
+}
+
 .card-box {
+	margin-top: 8px;
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	margin-bottom: 1.5rem;
 }
 .card {
 	width: 100%;
@@ -305,8 +318,9 @@ main {
 .bottom .card-link {
 	text-decoration: none;
 	color: #039;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	margin-bottom: 15px;
+	text-transform: uppercase;
 }
 .bottom .card-link:hover {
 	text-decoration: underline;
@@ -326,4 +340,31 @@ main {
 	padding: 2px 10px;
 	border: solid 1px #26a67c;
 	color: #26a67c;
+}
+.ilginç-ilan {
+	margin-bottom: 1rem;
+}
+.main-bottom-area {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+}
+.main-bottom {
+	margin: 20px 0px;
+	overflow: hidden;
+}
+.main-bottom a {
+	border: 1px solid #dfdfdf;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #44474e;
+	font-size: 16px;
+	text-decoration: none;
+	margin-top: 5px;
+}
+.bottom-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
 }
