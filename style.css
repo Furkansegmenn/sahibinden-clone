@@ -224,12 +224,15 @@ main {
 .grid-item img {
 	width: 80px;
 }
+.grid-item-2 img {
+	width: 100px;
+}
 .grid-item:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
 .grid-item p {
-	font-size: 13px;
+	font-size: 14px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	width: 80px;
@@ -238,7 +241,7 @@ main {
 }
 
 .info-bar {
-	margin: 30px 0px;
+	margin: 20px 0px;
 }
 
 .info-bar h4 {
@@ -363,8 +366,93 @@ main {
 	text-decoration: none;
 	margin-top: 5px;
 }
+.main-bottom a:hover {
+	text-decoration: underline;
+}
 .bottom-links {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
+}
+footer {
+	background: #f9f9f9;
+	border-top: 1px solid #dfdfdf;
+	padding: 30px 150px;
+}
+
+.footer-blocks {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+	justify-content: space-between;
+}
+.footer-blocks h3 {
+	color: #555;
+	margin-bottom: 1rem;
+}
+.footer-blocks a {
+	display: block;
+	color: #888;
+	text-decoration: none;
+	margin: 0.9rem 0px;
+}
+.footer-blocks a:hover {
+	text-decoration: underline;
+}
+.footer-blocks li {
+	list-style: none;
+}
+
+.left-side {
+	display: flex;
+	gap: 50px;
+	margin-bottom: 20px;
+}
+.footer-contact {
+	display: flex;
+	gap: 10px;
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+.footer-contact .red {
+	color: red;
+	font-weight: bold;
+	font-size: 15px;
+}
+.footer-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.footer-contact a {
+	text-decoration: none;
+	color: #555;
+}
+.footer-contact a:hover {
+	text-decoration: underline;
+}
+
+.last-p {
+	color: #888;
+	padding: 12px;
+	background: #fff;
+	border: 1px dashed #ccc;
+	border-radius: 2px;
+	margin: 8px 96px 8px 0;
+}
+.empty-info {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #555;
+	padding-right: 93px;
 }
