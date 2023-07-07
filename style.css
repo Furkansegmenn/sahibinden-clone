@@ -57,13 +57,6 @@ header {
 	overflow: hidden;
 }
 
-.x {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	min-width: 350px;
-}
-
 .navbar input {
 	border: none;
 	background-color: #2f3546;
@@ -104,6 +97,12 @@ header {
 }
 .icon label {
 	cursor: pointer;
+}
+.searchbar-x {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 350px;
 }
 .navbar form .detay {
 	font-size: 0.8rem;
@@ -156,7 +155,6 @@ aside {
 	flex-direction: column;
 	max-width: 25%;
 }
-
 .bar {
 	padding: 10px 20px;
 	display: flex;
@@ -185,10 +183,18 @@ aside {
 	margin: 3px 0px;
 	font-size: 16px;
 }
+.icon-p {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+	margin: 3px -35px;
+}
 .bar p {
 	margin-top: 15px;
 	font-size: 18px;
-	margin-left: -8px;
+	margin-left: -18px;
 }
 .bar:last-child {
 	border: none;
@@ -222,7 +228,7 @@ main {
 	border: 1px solid #e6e6e6;
 }
 .grid-item img {
-	width: 80px;
+	width: 120px;
 }
 .grid-item-2 img {
 	width: 100px;
@@ -247,14 +253,33 @@ main {
 .info-bar h4 {
 	border-bottom: 1px solid #e6e6e6;
 	padding: 8px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-weight: normal;
 }
+.word {
+	display: inline-block;
+	width: 75px;
+}
+
+.oto-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none !important;
+}
+
+.oto-link:hover span {
+	text-decoration: underline;
+}
+
+.oto-link-container {
+	display: flex;
+	gap: 10px;
+}
 .info-bar a {
-	width: 10px;
 	margin-right: 10px;
 	color: #039;
 	text-decoration: none;
+	max-width: 100px;
 }
 .info-bar a:hover {
 	text-decoration: underline;
@@ -291,7 +316,6 @@ main {
 .card-top a:hover {
 	text-decoration: underline;
 }
-
 .card-box {
 	margin-top: 8px;
 	display: flex;
@@ -374,18 +398,20 @@ main {
 	flex-wrap: wrap;
 	gap: 10px;
 }
+
+/* Footer */
+
 footer {
 	background: #f9f9f9;
 	border-top: 1px solid #dfdfdf;
 	padding: 30px 150px;
 }
-
 .footer-blocks {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-
 	justify-content: space-between;
+	margin-bottom: 50px;
 }
 .footer-blocks h3 {
 	color: #555;
@@ -406,8 +432,13 @@ footer {
 
 .left-side {
 	display: flex;
-	gap: 50px;
 	margin-bottom: 20px;
+	justify-content: space-between;
+	width: 92%;
+}
+.footer-left {
+	display: flex;
+	gap: 30px;
 }
 .footer-contact {
 	display: flex;
@@ -428,8 +459,8 @@ footer {
 	justify-content: center;
 	align-items: center;
 	background-color: red;
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
 }
 
